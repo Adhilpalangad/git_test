@@ -1,0 +1,111 @@
+[33mcommit f14757598a679cb167ab4d32422936bcebfc509e[m[33m ([m[1;36mHEAD -> [m[1;32mreview[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Adhilpalangad <adhilaaza@gmail.com>
+Date:   Wed Nov 27 11:06:32 2024 +0530
+
+    checking master branch
+
+[1mdiff --git a/main.js b/main.js[m
+[1mindex 66843ff..bc085f0 100644[m
+[1m--- a/main.js[m
+[1m+++ b/main.js[m
+[36m@@ -1,98 +1,3 @@[m
+[31m-(function ($) {[m
+[31m-    "use strict";[m
+[31m-[m
+[31m-    // Spinner[m
+[31m-    var spinner = function () {[m
+[31m-        setTimeout(function () {[m
+[31m-            if ($('#spinner').length > 0) {[m
+[31m-                $('#spinner').removeClass('show');[m
+[31m-            }[m
+[31m-        }, 1);[m
+[31m-    };[m
+[31m-    spinner();[m
+[31m-    [m
+[31m-    [m
+[31m-    // Initiate the wowjs[m
+[31m-    new WOW().init();[m
+[31m-[m
+[31m-[m
+[31m-    // Sticky Navbar[m
+[31m-    $(window).scroll(function () {[m
+[31m-        if ($(this).scrollTop() > 300) {[m
+[31m-            $('.sticky-top').addClass('shadow-sm').css('top', '0px');[m
+[31m-        } else {[m
+[31m-            $('.sticky-top').removeClass('shadow-sm').css('top', '-100px');[m
+[31m-        }[m
+[31m-    });[m
+[31m-    [m
+[31m-    [m
+[31m-    // Back to top button[m
+[31m-    $(window).scroll(function () {[m
+[31m-        if ($(this).scrollTop() > 300) {[m
+[31m-            $('.back-to-top').fadeIn('slow');[m
+[31m-        } else {[m
+[31m-            $('.back-to-top').fadeOut('slow');[m
+[31m-        }[m
+[31m-    });[m
+[31m-    $('.back-to-top').click(function () {[m
+[31m-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');[m
+[31m-        return false;[m
+[31m-    });[m
+[31m-[m
+[31m-[m
+[31m-    // Facts counter[m
+[31m-    $('[data-toggle="counter-up"]').counterUp({[m
+[31m-        delay: 10,[m
+[31m-        time: 2000[m
+[31m-    });[m
+[31m-[m
+[31m-[m
+[31m-    // Header carousel[m
+[31m-    $(".header-carousel").owlCarousel({[m
+[31m-        autoplay: true,[m
+[31m-        smartSpeed: 1500,[m
+[31m-        loop: true,[m
+[31m-        nav: false,[m
+[31m-        dots: true,[m
+[31m-        items: 1,[m
+[31m-        dotsData: true,[m
+[31m-    });[m
+[31m-[m
+[31m-[m
+[31m-    // Testimonials carousel[m
+[31m-    $(".testimonial-carousel").owlCarousel({[m
+[31m-        autoplay: true,[m
+[31m-        smartSpeed: 1000,[m
+[31m-        center: true,[m
+[31m-        dots: false,[m
+[31m-        loop: true,[m
+[31m-        nav : true,[m
+[31m-        navText : [[m
+[31m-            '<i class="bi bi-arrow-left"></i>',[m
+[31m-            '<i class="bi bi-arrow-right"></i>'[m
+[31m-        ],[m
+[31m-        responsive: {[m
+[31m-            0:{[m
+[31m-                items:1[m
+[31m-            },[m
+[31m-            768:{[m
+[31m-                items:2[m
+[31m-            }[m
+[31m-        }[m
+[31m-    });[m
+[31m-[m
+[31m-[m
+[31m-    // Portfolio isotope and filter[m
+[31m-    var portfolioIsotope = $('.portfolio-container').isotope({[m
+[31m-        itemSelector: '.portfolio-item',[m
+[31m-        layoutMode: 'fitRows'[m
+[31m-    });[m
+[31m-    $('#portfolio-flters li').on('click', function () {[m
+[31m-        $("#portfolio-flters li").removeClass('active');[m
+[31m-        $(this).addClass('active');[m
+[31m-[m
+[31m-        portfolioIsotope.isotope({filter: $(this).data('filter')});[m
+[31m-    });[m
+[31m-    [m
+[31m-})(jQuery);[m
+[32m+[m[32m//hello from first commit[m
+ [m
+[32m+[m[32m//hellow from another brancj[m
